@@ -2,6 +2,7 @@
   --lila: #E3DFF7;
   --lila_oscuro: #7060BF;
   --morado: #3C24B2;
+  --morado_oscuro: #2B1A80;
   --gris: #1A1A1A;
 }
 
@@ -25,13 +26,130 @@ body {
   align-items: center;
 }
 
-h1, h5 {
+.home {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+h1,
+h5 {
   margin-bottom: 0;
 }
 
 .titulo1 {
   color: var(--morado);
+  font-weight: 800;
 }
+
+.card {
+  border: 0;
+  background-color: transparent;
+  gap: 1.5rem;
+}
+
+.card-body {
+  display: flex;
+  border: 1px solid var(--gris);
+  border-radius: 0.75rem;
+  height: 14rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.card-body h1 {
+  font-weight: 600;
+  color: var(--lila);
+  position: relative;
+  z-index: 1;
+}
+
+.btn {
+  color: var(--lila);
+  background-color: var(--morado);
+  border-radius: 100px;
+}
+
+.btn:hover {
+  color: var(--lila);
+  background-color: var(--morado_oscuro);
+}
+
+footer{
+  background-color: var(--morado_oscuro);
+  color: var(--lila);
+}
+
+.footer-custom{
+  padding-top: 4rem;
+}
+
+/* ------- FONDO CARDS RETOS ------- */
+.fondo-reto1 {
+  background-image: url("../imagenes/");
+}
+
+.fondo-reto2 {
+  background-image: url("../imagenes/");
+}
+
+.fondo-reto3 {
+  background-image: url("../imagenes/");
+}
+
+.fondo-reto4 {
+  background-image: url("../imagenes/");
+}
+
+.fondo-reto5 {
+  background-image: url("../imagenes/");
+}
+
+.fondo-reto6 {
+  background-image: url("../imagenes/");
+}
+
+.fondo-reto7 {
+  background-image: url("../imagenes/");
+}
+
+.fondo-reto8 {
+  background-image: url("../imagenes/");
+}
+
+.fondo-reto9 {
+  background-image: url("../imagenes/");
+}
+
+.fondo-reto10 {
+  background-image: url("../imagenes/");
+}
+
+.fondo-reto1::before,
+.fondo-reto2::before,
+.fondo-reto3::before,
+.fondo-reto4::before,
+.fondo-reto5::before,
+.fondo-reto6::before,
+.fondo-reto7::before,
+.fondo-reto8::before,
+.fondo-reto9::before,
+.fondo-reto10::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(43, 26, 128, 0.65);
+  z-index: 0;
+}
+
 
 
 /* ------- ÍCONOS --------*/
@@ -42,4 +160,11 @@ h1, h5 {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23E3DFF7' d='M5 19v-8.692q0-.384.172-.727t.474-.565l5.385-4.078q.423-.323.966-.323t.972.323l5.385 4.077q.303.222.474.566q.172.343.172.727V19q0 .402-.299.701T18 20h-3.384q-.344 0-.576-.232q-.232-.233-.232-.576v-4.769q0-.343-.232-.575q-.233-.233-.576-.233h-2q-.343 0-.575.233q-.233.232-.233.575v4.77q0 .343-.232.575T9.385 20H6q-.402 0-.701-.299T5 19'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 768px) {
+  .material-symbols-light--home-rounded {
+    width: 24px;
+    height: 24px;
+  }
 }
