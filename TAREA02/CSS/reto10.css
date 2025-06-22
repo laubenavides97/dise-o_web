@@ -1,0 +1,8 @@
+.card {
+  gap: 1rem;
+}
+
+.card-body {
+  border: none;
+  height: 100%;
+}
