@@ -4,6 +4,7 @@
   --morado: #3C24B2;
   --morado_oscuro: #2B1A80;
   --gris: #1A1A1A;
+  --gris-claro: #999999;
 }
 
 * {
@@ -14,6 +15,7 @@
 body {
   background-color: var(--lila);
   font-family: 'DM Sans';
+  height: 100%;
 }
 
 .navbar-custom {
@@ -69,13 +71,13 @@ h5 {
   z-index: 1;
 }
 
-.btn {
+.btn-custom {
   color: var(--lila);
   background-color: var(--morado);
   border-radius: 100px;
 }
 
-.btn:hover {
+.btn-custom:hover {
   color: var(--lila);
   background-color: var(--morado_oscuro);
 }

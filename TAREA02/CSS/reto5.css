@@ -1,0 +1,22 @@
+.no-gutters{
+  padding: 0;
+}
+
+.contenido {
+  padding: 2rem;
+  color: white;
+  height: 100%;
+}
+
+.bg-1 {
+  background-color: #1843F1;
+}
+
+
+.bg-2 {
+  background-color: #4C70FF;
+}
+
+.bg-3 {
+  background-color: #8099FF;
+}

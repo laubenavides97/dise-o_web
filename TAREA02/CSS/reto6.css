@@ -1,0 +1,18 @@
+.diagramacion-banner{
+  padding: 0;
+}
+.hero-banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../imagenes/braden-collum-75XHJzEIeUc-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
