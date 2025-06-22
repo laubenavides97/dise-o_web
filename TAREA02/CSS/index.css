@@ -66,7 +66,7 @@ h5 {
 
 .card-body h1 {
   font-weight: 600;
-  color: var(--lila);
+  color: white;
   position: relative;
   z-index: 1;
 }
@@ -93,43 +93,43 @@ footer{
 
 /* ------- FONDO CARDS RETOS ------- */
 .fondo-reto1 {
-  background-image: url("../imagenes/");
+  background-image: url("../imagenes/reto1.png");
 }
 
 .fondo-reto2 {
-  background-image: url("../imagenes/");
+  background-image: url("../imagenes/reto2.png");
 }
 
 .fondo-reto3 {
-  background-image: url("../imagenes/");
+  background-image: url("../imagenes/reto3.png");
 }
 
 .fondo-reto4 {
-  background-image: url("../imagenes/");
+  background-image: url("../imagenes/reto4.png");
 }
 
 .fondo-reto5 {
-  background-image: url("../imagenes/");
+  background-image: url("../imagenes/reto5.png");
 }
 
 .fondo-reto6 {
-  background-image: url("../imagenes/");
+  background-image: url("../imagenes/reto6.png");
 }
 
 .fondo-reto7 {
-  background-image: url("../imagenes/");
+  background-image: url("../imagenes/reto7.png");
 }
 
 .fondo-reto8 {
-  background-image: url("../imagenes/");
+  background-image: url("../imagenes/reto8.png");
 }
 
 .fondo-reto9 {
-  background-image: url("../imagenes/");
+  background-image: url("../imagenes/reto9.png");
 }
 
 .fondo-reto10 {
-  background-image: url("../imagenes/");
+  background-image: url("../imagenes/reto10.png");
 }
 
 .fondo-reto1::before,
@@ -148,7 +148,7 @@ footer{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(43, 26, 128, 0.65);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 0;
 }
 
