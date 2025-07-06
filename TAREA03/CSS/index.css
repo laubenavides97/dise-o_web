@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+  --café: #7B4517;
+  --anaranjado: #F86800;
+  --amarillo: #FCB110;
+  --verde: #4D7747;
+  --verdeHover: #2f552a;
+  --crema: #FFF3D9;
+  --negro: #191919;
+}
+
+html {
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.padding-custom {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.margin-custom {
+  margin-bottom: 3rem;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  background-color: var(--crema);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+header img {
+  height: 5rem;
+}
+
+.seccion1 {
+  background-color: var(--anaranjado);
+  background-image: url("../Media/patern1.svg");
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+h1 {
+  font-size: calc(3rem + 1.5vw);
+  font-weight: 700;
+  letter-spacing: -0.09rem;
+  line-height: 3rem;
+}
+
+.seccion1 h1 {
+  color: var(--crema);
+}
+
+.seccion1 p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  color: var(--crema);
+}
+
+.btn-custom1 {
+  color: var(--crema);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.045rem;
+  background-color: var(--verde);
+  transition: 300ms;
+}
+
+.btn-custom1:hover {
+  color: var(--crema);
+  background-color: var(--verdeHover);
+}
+
+@media (max-width: 768px) {
+  .padding-custom {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  header img {
+    height: 3rem;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .margin-custom {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: calc(2rem + 1.5vw);
+    line-height: 2rem;
+  }
+
+  .seccion1 p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: var(--crema);
+  }
+
+  .btn-custom1 {
+  font-size: 1rem;
+}
+
+}
