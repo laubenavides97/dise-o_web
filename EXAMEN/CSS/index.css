@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+  --café: #7B4517;
+  --anaranjado: #F86800;
+  --amarillo: #FCB110;
+  --verde: #4D7747;
+  --verdeHover: #2f552a;
+  --crema: #FFF3D9;
+  --negro: #191919;
+}
+
+html {
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  --bs-gutter-x: 0;
+}
+
+.padding-custom {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.margin-custom {
+  margin-bottom: 3rem;
+}
+
+.margin-custom2 {
+  margin-bottom: 1.5rem;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: var(--crema);
+}
+
+/*---- MENÚ ----*/
+.navbar-brand img {
+  height: 3rem;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.20rem;
+  font-size: 1.75rem;
+  color: var(--café);
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: var(--café);
+  transition: all 0.3s ease-in;
+}
+
+.nav-item a:hover,
+.navbar-nav .nav-link.show {
+  color: #4c290b;
+}
+
+.dropdown-menu {
+  background-color: var(--café);
+  border: none;
+  border-radius: 2px;
+}
+
+.dropdown-menu a {
+  color: var(--crema);
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--crema);
+  color: var(--café);
+}
+
+/*---- SECCIÓN 1 ----*/
+.seccion1 {
+  display: flex;
+  background-image: url("../Media/banner1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 45rem;
+  color: var(--crema);
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: calc(2.5rem + 1.5vw);
+  font-weight: 700;
+  letter-spacing: -0.09rem;
+  line-height: 2.5rem;
+}
+
+/*---- SECCIÓN 2 ----*/
+.seccion2,
+.seccion4 {
+  background-color: var(--anaranjado);
+  background-image: url("../Media/patern1.svg");
+  background-repeat: repeat;
+  background-size: contain;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.05);
+}
+
+.icon-box {
+  border-radius: 2px;
+  background: rgba(255, 243, 217, 0.75);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon-card{
+  color: var(--negro);
+  font-size: 3rem;
+}
+
+.text-card {
+  color: rgba(25, 25, 25, 0.8);
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+
+h2 {
+  font-size: calc(2rem + .9vw);
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: calc(1.5rem + .6vw);
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.seccion2 h2,
+.seccion3 h2,
+.seccion4 h2,
+.parrafo-actividades,
+.seccion4 h5 {
+  color: var(--crema);
+}
+
+
+.texto-crema {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  color: var(--crema);
+}
+
+.btn-custom1 {
+  color: var(--crema);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  background-color: var(--verde);
+  transition: 300ms;
+}
+
+.btn-custom2 {
+  color: var(--crema);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.045rem;
+  background-color: var(--verde);
+  transition: 300ms;
+}
+
+.btn-custom1:hover,
+.btn-custom2:hover {
+  color: var(--crema);
+  background-color: var(--verdeHover);
+}
+
+.actividades img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.restaurantes img {
+  width: 180px;           
+  height: 180px;          
+  object-fit: cover;      
+  border-radius: 50%;  
+  display: block;
+  margin: 0 auto;   
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;     
+}
+
+.restaurantes img:hover {
+  transform: scale(1.05);    
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.seccion5 {
+  background-color: var(--crema);
+}
+
+
+.seccion5 h2 {
+  color: var(--café);
+}
+
+.card {
+  border: none;
+  background-color: transparent;
+  gap: 1rem;
+}
+
+.card-title {
+  color: var(--café);
+  padding-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  color: var(--negro);
+}
+
+
+.seccion3,
+footer {
+  background-color: var(--café);
+}
+
+.seccion3 h1,
+.seccion3 h3,
+footer p,
+.border-light {
+  color: var(--crema);
+}
+
+.audio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.seccion5 p{
+  color: var(--negro);
+}
+
+.icon-card2{
+  color: var(--negro);
+  font-size: 2rem;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: var(--negro);
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .social-icon:hover {
+    color: var(--café);
+    transform: translateY(-3px);
+  }
+
+.btn-top {
+  display: flex;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  background-color: var(--verde);
+  color: var(--crema);
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.btn-top:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.logoFooter {
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  .padding-custom {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  header img {
+    height: 3rem;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .margin-custom {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: calc(2rem + 1.5vw);
+    line-height: 2rem;
+  }
+
+  h2 {
+    font-size: calc(1.5rem + .9vw);
+    font-weight: 700;
+    line-height: 1.5rem;
+  }
+
+  .navbar-brand img {
+    height: 2rem;
+  }
+
+  .seccion1 p,
+  .seccion3 p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: var(--crema);
+  }
+
+  .btn-custom1 {
+    font-size: 1rem;
+  }
+
+  .card-title {
+    padding-bottom: 0.5rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: var(--negro);
+  }
+
+  .carousel-indicators {
+    margin-bottom: -0.5rem;
+  }
+
+  .btn-whatsapp,
+  .btn-top {
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .btn-whatsapp {
+    bottom: 5rem;
+  }
+}
