@@ -1,0 +1,319 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+html {
+  font-size: 14px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*----- VARIABLES -----*/
+/*-- COLORES --*/
+/*-- TIPOGRAFÍA --*/
+/*-- ÍCONOS --*/
+/*-- PADDING, MARGINS, GAPS & RADIOS --*/
+/*-- MEDIA --*/
+/*----- ESTILOS -----*/
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #FEFBF9;
+}
+
+/*-- TIPOGRAFÍA --*/
+h1 {
+  font-size: 1.45rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 0.85rem;
+}
+
+h1,
+h2,
+p,
+h3 {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/*-- RESETS --*/
+.navbar,
+.container-fluid,
+.navbar-brand {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*-- HEADER --*/
+header {
+  padding: 22px 84px;
+  border-bottom: solid #E3E4E5 1px;
+}
+
+.navbar-brand,
+.navbar-nav {
+  margin: 0px 60px 0px 0px;
+}
+
+.navbar-toggler {
+  padding: 4px 6px;
+  font-size: 24px;
+  color: #19191A;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.ph-magnifying-glass {
+  font-size: 16px;
+  color: #7E7F80;
+}
+
+.search-bar {
+  position: relative;
+  align-items: center;
+  border-bottom: solid #E3E4E5 1px;
+  padding: 8px 8px 6px 8px;
+  gap: 8px;
+  margin: 0px 60px 0px 0px;
+}
+
+.form-control {
+  padding: 2px 6px;
+  color: #7E7F80;
+  background-color: #FEFBF9;
+}
+
+.form-control::-moz-placeholder {
+  color: #7E7F80;
+}
+
+.form-control::placeholder {
+  color: #7E7F80;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  color: #19191A;
+  background-color: #E3E4E5;
+}
+
+.nav-item {
+  transition: 0.3s;
+  border-bottom: solid transparent 1px;
+}
+
+.nav-item:hover,
+.menu-icons:hover {
+  border-bottom: solid #19191A 1px;
+}
+
+.nav-link {
+  padding: 8px;
+  color: #19191A;
+}
+
+.nav-link:hover {
+  color: #19191A;
+}
+
+.dropdown-menu {
+  background-color: #FEFBF9;
+  border-radius: 4px;
+  border: solid #E3E4E5 1px;
+  padding: 0px;
+}
+
+.dropdown-item {
+  padding: 4px 14px;
+  color: #19191A;
+}
+
+.dropdown-item:hover {
+  background-color: #E3E4E5;
+}
+
+.menu-icons {
+  text-decoration: none;
+  transition: 0.3s;
+  border-bottom: solid transparent 1px;
+}
+
+.ph-user-circle,
+.ph-shopping-cart-simple {
+  font-size: 24px;
+  color: #19191A;
+}
+
+/*-- BOTÓN TOP --*/
+.btn-top {
+  display: flex;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  background-color: #FEFBF9;
+  color: #19191A;
+  font-size: 28px;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+  border: solid #7E7F80 1px;
+}
+
+.btn-top:hover {
+  transform: scale(1.1);
+}
+
+/*-- FOOTER --*/
+footer {
+  background-color: #19191A;
+  padding: 80px 86px 24px 86px;
+}
+
+.logo-footer {
+  margin-bottom: 40px;
+}
+
+footer h2,
+.footer-link,
+.contacto p,
+.footer-icon {
+  color: #FEFBF9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-icon {
+  font-size: 24px;
+}
+
+.footer-link:hover,
+.footer-icon:hover {
+  color: #B686D9;
+}
+
+footer hr {
+  border-color: #FEFBF9;
+}
+
+/*----- HOME -----*/
+/*-- SECCION 1: HERO ---*/
+.home-hero-section {
+  display: flex;
+  background-image: url("../Media/banner-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  align-items: center;
+  height: 600px;
+  color: #FEFBF9;
+}
+
+.home-hero-section h1 {
+  font-size: 3rem;
+}
+
+/*-- SECCION 2: HERO ---*/
+.category-card {
+  border: none;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Tamaño general para los iconos */
+.category-card i {
+  font-size: 2.5rem;
+}
+
+/* Colores para cada ícono */
+.icon-orange {
+  color: #f39c12;
+}
+
+.icon-pink {
+  color: #e91e63;
+}
+
+.icon-green {
+  color: #27ae60;
+}
+
+.icon-blue {
+  color: #2c3eeb;
+}
+
+.icon-cyan {
+  color: #00bcd4;
+}
+
+.icon-red {
+  color: #e74c3c;
+}
+
+/*----- M -----*/
+@media (max-width: 1024px) {
+  .navbar-brand,
+  .navbar-nav,
+  .search-bar {
+    margin: 0px 42px 0px 0px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 22px 24px;
+  }
+  .navbar-collapse {
+    margin-top: 28px;
+  }
+  .navbar-nav,
+  .search-bar {
+    margin: 0px 0px 28px 0px;
+  }
+  .menu-icons-container {
+    padding-left: 8px;
+  }
+  footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+/*----- S -----*/
+@media (max-width: 360px) {
+  header {
+    padding: 16px 18px;
+  }
+  footer {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}/*# sourceMappingURL=index.css.map */
