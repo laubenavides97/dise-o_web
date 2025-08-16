@@ -313,13 +313,20 @@ footer hr {
 .home-section3,
 .comprar-seccion1,
 .producto-seccion1,
-.marcas-seccion1 {
+.marcas-seccion1,
+.servicios-seccion1,
+.servicios-seccion3,
+.servicios-seccion4,
+.servicios-seccion5,
+.nosotros-seccion1,
+.nosotros-seccion2 {
   border-bottom: solid $gris-claro 1px;
   padding-top: $pad-sections;
   padding-bottom: $pad-sections;
 }
 
-.section-header {
+.section-header,
+.alphabet-nav {
   color: $negro;
   margin-bottom: $mar-menu-bottom;
 }
@@ -425,7 +432,10 @@ footer hr {
 /*---------- COMPRAR ----------*/
 .comprar-seccion1,
 .producto-seccion1,
-.marcas-seccion1 {
+.marcas-seccion1,
+.servicios-seccion1,
+.servicios-seccion5,
+.nosotros-seccion2 {
   border-bottom: none;
 }
 
@@ -552,8 +562,137 @@ footer hr {
   background: $morado;
   color: $crema;
   font-size: 14px;
+  transition: transform 0.3s ease;
+  border: none;
 }
 
+.btn-add-to-bag:hover {
+  background-color: $lila;
+}
+
+.accordion{
+  --bs-accordion-bg: $crema;
+  --bs-accordion-border-width: $reset;
+  --bs-accordion-border-radius: $reset;
+  --bs-accordion-inner-border-radius: $reset;
+  --bs-accordion-active-color: none;
+  --bs-accordion-active-bg: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+
+}
+
+.accordion-item{
+  border-bottom: solid $gris-claro 1px;
+}
+
+.last-item{
+  border-bottom: none;
+}
+
+.btn-custom-morado{
+  background-color: $morado;
+  border: none;
+}
+.btn-custom-morado:hover{
+  background-color: $lila;
+}
+
+/*---------- MARCAS ----------*/
+.alphabet-nav {
+  border-bottom: 1px solid $gris-claro;
+}
+
+.brand-section-header {
+  color: $negro;
+}
+
+.brand-list {
+  list-style: none;
+  padding: $reset;
+  margin: $reset;
+}
+
+.marcas-divider {
+  margin-top: $mar-menu-bottom;
+  margin-bottom: $mar-menu-bottom;
+  color: $gris-oscuro;
+}
+
+/*---------- SERVICIOS ----------*/
+.service-description {
+  margin-bottom: 4rem;
+}
+
+.cp-uno {
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+.cp-dos {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.cp-divisor {
+  clip-path: polygon(5% 100%, 95% 100%, 100% 0, 0 0);
+  background-color: $lila;
+  height: 2rem;
+
+}
+
+.table {
+  --bs-table-bg: $crema;
+}
+
+.table-custom th,
+.table-custom td {
+  vertical-align: middle;
+}
+
+.service-cell {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.options-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.price-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.table-custom tr td:first-child {
+  border-right: 1px solid #dee2e6;
+}
+
+.table-custom tr td:nth-child(2) {
+  border-right: 1px solid #dee2e6;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/*---------- NOSOTROS ----------*/
+.form-control {
+  padding: 8px 14px;
+  color: $negro;
+  background-color: $crema;
+}
+
+.form-control:focus {
+  border: solid $gris-oscuro 1px;
+  background-color: $gris-claro;
+}
+
+.subscribe-inputs{
+  margin-bottom: 1rem;
+}
 
 /*----- M -----*/
 @media (max-width: 1024px) {
@@ -562,6 +701,10 @@ footer hr {
   .navbar-nav,
   .search-bar {
     margin: $reset $mar-menu-right-m $reset $reset;
+  }
+
+  .cp-dos {
+    margin-bottom: 1rem;
   }
 }
 
