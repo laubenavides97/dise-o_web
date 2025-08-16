@@ -257,6 +257,32 @@ header {
   transform: scale(1.1);
 }
 
+.btn-whatsapp {
+  display: flex;
+  position: fixed;
+  bottom: 6rem;
+  right: 1rem;
+  z-index: 1000;
+  background-color: $crema;
+  color: $negro;
+  font-size: $btn-top;
+  text-decoration: none;
+  border-radius: $circle;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+  border: solid $gris-oscuro 1px;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.1);
+}
+
 /*-- FOOTER --*/
 footer {
   background-color: $negro;
@@ -632,7 +658,7 @@ footer hr {
 }
 
 .cp-divisor {
-  clip-path: polygon(5% 100%, 95% 100%, 100% 0, 0 0);
+  clip-path: polygon(5% 0, 100% 0%, 95% 99%, 0% 100%);
   background-color: $lila;
   height: 2rem;
 
